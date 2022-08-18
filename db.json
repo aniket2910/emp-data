@@ -1,0 +1,14 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Swannad Kadam",
+      "age": 29,
+      "gender": "Male",
+      "contact": 9088979870,
+      "image": "https://www.infoq.com/images/profiles/V7Ry6WwWduHka1r9lrW2Jp0Sl4pCjSaK.jpg",
+      "department": "Travelling",
+      "salary": 10000000
+    }
+  ]
+}
