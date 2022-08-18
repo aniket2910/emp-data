@@ -1,14 +1,11 @@
-const PORT = 8080;
-const path = require("path");
+const PORT = process.env.PORT || 3000;
 const jsonServer = require("json-server");
-const bodyParser = require("body-parser");
-
 const server = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, "db.json"));
+const router = jsonServer.router("db.json");
+
 const middlewares = jsonServer.defaults();
 server.use(middlewares);
-server.use(jsonServer, bodyParser);
-server.use("/api", router);
+server.use(router);
 server.listen(PORT, () => {
   console.log("Server is running on 8080");
 });
